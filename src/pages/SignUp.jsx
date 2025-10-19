@@ -36,7 +36,7 @@ const SignUp = () => {
         name:fullName
       }
 
-      const response = await axios.post('http://final-hackathon-backend-psi.vercel.app/signup', JSON.stringify(data), {
+      const response = await axios.post('https://final-hackathon-backend-psi.vercel.app/signup', JSON.stringify(data), {
       headers: { 'Content-Type': 'application/json' },
       })
       console.log('response', response)
