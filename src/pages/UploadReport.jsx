@@ -48,7 +48,7 @@ const UploadReport = () => {
   formData.append('reportDate', reportDate);
 
   try {
-    const res = await axios.post('http://localhost:5000/reports/upload', formData, {
+    const res = await axios.post('http://final-hackathon-backend-psi.vercel.app/reports/upload', formData, {
       headers: { 'Content-Type': 'multipart/form-data' },
     });
 

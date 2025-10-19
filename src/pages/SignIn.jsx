@@ -30,7 +30,7 @@ const SignIn = () => {
         password,
       }
 
-      const response = await axios.post('http://localhost:5000/login', JSON.stringify(data), {
+      const response = await axios.post('http://final-hackathon-backend-psi.vercel.app/login', JSON.stringify(data), {
       headers: { 'Content-Type': 'application/json' },
       })
       console.log('response', response)

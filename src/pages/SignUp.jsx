@@ -36,11 +36,11 @@ const SignUp = () => {
         name:fullName
       }
 
-      const response = await axios.post('http://localhost:5000/signup', JSON.stringify(data), {
+      const response = await axios.post('http://final-hackathon-backend-psi.vercel.app/signup', JSON.stringify(data), {
       headers: { 'Content-Type': 'application/json' },
       })
       console.log('response', response)
-     if(response.status == 201){
+     if(response.status == 201 || 200){
       await localStorage.setItem('authToken', JSON.stringify(response?.data?.data?._id));
       alert('Account created successfully!');
       window.location.reload();
